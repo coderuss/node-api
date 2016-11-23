@@ -3,6 +3,12 @@ node_js:
   - 6
 env:
 - NODE_ENV=TEST
+cache:
+   directories:
+     - node_modules
+before_script:
+  - npm start &
+  - sleep 2
 script:
   - npm install
   - npm test
