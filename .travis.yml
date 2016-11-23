@@ -3,6 +3,3 @@ node_js:
   - 6
 env:
 - NODE_ENV=TEST
-script:
-  - npm install
-  - npm test
