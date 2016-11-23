@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, guest: 22, host: 2230, id: "ssh"
   config.vm.network :forwarded_port, guest: 3000, host: 3006
 
-	config.vm.synced_folder "../", "/vagrant"
+	config.vm.synced_folder "./", "/vagrant"
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
